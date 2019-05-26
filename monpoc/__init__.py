@@ -61,6 +61,9 @@ class Attack:
 
         return f"Rng:{self.reach} {self.action}+{self.booster}"
 
+    def to_csv(self):
+        return f"{self.reach};{self.action};{self.booster}"
+
 
 @dataclass
 class Ability:
@@ -143,12 +146,12 @@ class Unit(Model):
 
     @staticmethod
     def csv_headers():
-        return "Name;Agenda;Faction;Speed;Defense;Brawl;Blast;Cost;Abilities"
+        return "Name;Agenda;Faction;Speed;Defense;Brawl;;;Blast;;;Cost;Abilities"
 
     def to_csv(self):
         return (
             f"{self.name};{self.agenda.name};{self.faction.name};{self.speed};"
-            f"{self.defense};{self.brawl};{self.blast};{self.cost};"
+            f"{self.defense};{self.brawl.to_csv()};{self.blast.to_csv()};{self.cost};"
             f"{', '.join([_.name for _ in self.abilities])}"
         )
 
@@ -185,7 +188,7 @@ class Monster(Unit):
     def csv_headers():
         return (
             "Name;Agenda;Faction;Speed;Hyper Speed;Defense;Hyper Defense;"
-            "Brawl;Hyper Brawl;Blast;Hyper Blast;Power;Hyper Power;"
+            "Brawl;;;Hyper Brawl;;;Blast;;;Hyper Blast;;;Power;;;Hyper Power;;;"
             "Health;Hyper Health;Abilities;Hyper Abilities"
         )
 
@@ -194,9 +197,9 @@ class Monster(Unit):
 
         return (
             f"{self.name};{self.agenda.name};{self.faction.name};{self.speed};"
-            f"{hyper.speed};{self.defense};{hyper.defense};{self.brawl};"
-            f"{hyper.brawl};{self.blast};{hyper.blast};{self.power};{hyper.power};"
-            f"{self.health};{hyper.health};"
+            f"{hyper.speed};{self.defense};{hyper.defense};{self.brawl.to_csv()};"
+            f"{hyper.brawl.to_csv()};{self.blast.to_csv()};{hyper.blast.to_csv()};"
+            f"{self.power.to_csv()};{hyper.power.to_csv()};{self.health};{hyper.health};"
             f"{', '.join([_.name for _ in self.abilities])};"
             f"{', '.join([_.name for _ in hyper.abilities])}"
         )

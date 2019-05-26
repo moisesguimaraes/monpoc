@@ -92,7 +92,7 @@ class TestUnit(unittest.TestCase):
     def test_to_csv(self):
         self.assertEqual(
             self.unit.to_csv(),
-            "G-Tank;Protectors;G.U.A.R.D.;4;4;1+0;Rng:5 2+0;1;Aim, All Terrain",
+            "G-Tank;Protectors;G.U.A.R.D.;4;4;1;1;0;5;2;0;1;Aim, All Terrain",
         )
 
 
@@ -189,7 +189,7 @@ class TestMonster(unittest.TestCase):
         self.assertEqual(
             self.monster.to_csv(),
             "Zor-Raiden;Protectors;Shadow Sun Syndicate;7;7"
-            ";9;9;8+4;8+6;;Rng:3 4+4;6+4;7+4;10;5;Combat Coordination, "
+            ";9;9;1;8;4;1;8;6;0;0;0;3;4;4;1;6;4;1;7;4;10;5;Combat Coordination, "
             "High Mobility, Hit & Run, Reposition;Combat Coordination, Flank, "
             "High Mobility, Hit & Run, Reposition, Weapon Master",
         )
