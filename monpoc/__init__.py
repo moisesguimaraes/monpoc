@@ -50,8 +50,12 @@ class Ability:
     def from_data(cls, data):
         return cls(data[0], data[1])
 
+    @staticmethod
+    def csv_headers():
+        return "Name;Description"
+
     def to_csv(self):
-        return f"{self.name}; {self.descryption}\n"
+        return f"{self.name};{self.descryption}"
 
 
 ABILITIES = {d[0]: Ability.from_data(d) for d in game_data.ABILITIES_DATA}
@@ -79,11 +83,18 @@ class Building:
 
         return cls(name=data[0], defense=data[4], abilities=abilities)
 
+    @staticmethod
+    def csv_headers():
+        return "Name;Defense;Abilities"
+
     def to_csv(self):
-        result = f"{self.name}; {self.defense}; "
-        result += f"{', '.join([_.name for _ in self.abilities])}\n"
+        result = f"{self.name};{self.defense};"
+        result += f"{', '.join([_.name for _ in self.abilities])}"
 
         return result
+
+
+BUILDINGS = {d[0]: Building.from_data(d) for d in game_data.BUILDINGS_DATA}
 
 
 @dataclass

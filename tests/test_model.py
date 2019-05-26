@@ -7,13 +7,18 @@ import unittest
 
 class TestAbility(unittest.TestCase):
     def setUp(self):
-        self.foo = Ability("foo", "bar")
+        self.ability = Ability("Mechanical", "This monster is mechanical.")
 
     def from_data(self):
-        self.assertEqual(self.foo, Ability.from_data(["foo", "bar"]))
+        self.assertEqual(
+            self.ability,
+            Ability.from_data(["Mechanical", "This monster is mechanical."]),
+        )
 
     def test_to_csv(self):
-        self.assertEqual(self.foo.to_csv(), "foo; bar\n")
+        self.assertEqual(
+            self.ability.to_csv(), "Mechanical;This monster is mechanical."
+        )
 
 
 # Buildings
@@ -21,22 +26,22 @@ class TestAbility(unittest.TestCase):
 
 class TestBuilding(unittest.TestCase):
     def setUp(self):
-        self.ab_data = [["Incombustable", 0], ["Opportunity", 0]]
+        self.abilities_data = [["Incombustable", 0], ["Opportunity", 0]]
 
-        ab = [ABILITIES["Incombustable"], ABILITIES["Opportunity"]]
-        self.lib = Building(name="Statue of Liberty", defense=6, abilities=ab)
+        abilities = [ABILITIES["Incombustable"], ABILITIES["Opportunity"]]
+        self.building = Building(name="Statue of Liberty", defense=6, abilities=abilities)
 
     def test_from_data(self):
         self.assertEqual(
-            self.lib,
+            self.building,
             Building.from_data(
-                ["Statue of Liberty", None, None, None, 6, self.ab_data]
+                ["Statue of Liberty", None, None, None, 6, self.abilities_data]
             ),
         )
 
     def test_to_csv(self):
         self.assertEqual(
-            self.lib.to_csv(), "Statue of Liberty; 6; Incombustable, Opportunity\n"
+            self.building.to_csv(), "Statue of Liberty;6;Incombustable, Opportunity"
         )
 
 
