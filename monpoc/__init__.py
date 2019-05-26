@@ -18,7 +18,7 @@ Agenda = Enum(
 _FACTIONS = {
     1: ["G.U.A.R.D.", "GUARD"],
     2: ["Shadow Sun Syndicate", "SHADOW_SUN_S"],
-    3: ["Terrasaurus", "TERRASAURUS"],
+    3: ["Terrasaurs", "TERRASAURS"],
     4: ["Tritons", "TRITONS"],
     5: ["Lords of Cthul", "L_OF_CTHUL"],
     6: ["Martian Menace", "MARTIAN_M"],
@@ -39,6 +39,27 @@ class Attack:
     reach: int = 0
     action: int = 0
     booster: int = 0
+
+    @classmethod
+    def from_data(cls, data):
+        if data == "-":
+            return cls()
+
+        if data.startswith("Rng:"):
+            data = data[4:]
+        else:
+            data = "1 " + data
+
+        return cls(*[int(d) for d in data.replace("+", " ").split()])
+
+    def __str__(self):
+        if self.reach == 0:
+            return ""
+
+        if self.reach == 1:
+            return f"{self.action}+{self.booster}"
+
+        return f"Rng:{self.reach} {self.action}+{self.booster}"
 
 
 @dataclass
@@ -81,7 +102,7 @@ class Building:
     def from_data(cls, data):
         abilities = [ABILITIES[a[0]] for a in data[5]]
 
-        return cls(name=data[0], defense=data[4], abilities=abilities)
+        return cls(name=data[0], defense=int(data[4]), abilities=abilities)
 
     @staticmethod
     def csv_headers():
@@ -102,15 +123,42 @@ class Unit(Model):
     speed: int = 0
     brawl: Attack = None
     blast: Attack = None
-    power: Attack = None
+    cost: int = 0
 
     @classmethod
     def from_data(cls, data):
-        pass
+        abilities = [ABILITIES[a[0]] for a in data[8]]
+
+        return Unit(
+            name=data[0],
+            agenda=Agenda[data[1]],
+            faction=Faction[data[2]],
+            speed=int(data[3]),
+            defense=int(data[4]),
+            brawl=Attack.from_data(data[5]),
+            blast=Attack.from_data(data[6]),
+            cost=int(data[7]),
+            abilities=abilities
+        )
+
+    @staticmethod
+    def csv_headers():
+        return "Name;Agenda;Faction;Speed;Defense;Brawl;Blast;Cost;Abilities"
+
+    def to_csv(self):
+        result = f"{self.name};{self.agenda.name};{self.faction.name};{self.speed};"
+        result += f"{self.defense};{self.brawl};{self.blast};{self.cost};"
+        result += f"{', '.join([_.name for _ in self.abilities])}"
+
+        return result
+
+
+UNITS = {d[0]: Unit.from_data(d) for d in game_data.UNITS_DATA}
 
 
 @dataclass
 class Monster(Unit):
+    power: Attack = None
     hyper_speed: int = 0
     hyper_defense: int = 0
     hyper_abilities: List[Ability] = field(default_factory=list)

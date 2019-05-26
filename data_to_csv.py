@@ -26,7 +26,10 @@ def main():
         if conf.cathegory == "Monsters":
             pass
         elif conf.cathegory == "Units":
-            pass
+            print(monpoc.Unit.csv_headers())
+
+            for unit in monpoc.UNITS.values():
+                print(unit.to_csv())
 
         elif conf.cathegory == "Buildings":
             print(monpoc.Building.csv_headers())
