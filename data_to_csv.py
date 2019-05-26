@@ -8,11 +8,12 @@ import monpoc
 
 _opts = [
     cfg.StrOpt(
-        'cathegory',
+        "cathegory",
         required=True,
         positional=True,
         choices=["Monsters", "Units", "Buildings", "Abilities"],
-        help='What cathegory to be exported.'),
+        help="What cathegory to be exported.",
+    )
 ]
 
 
@@ -24,7 +25,11 @@ def main():
         conf(sys.argv[1:])
 
         if conf.cathegory == "Monsters":
-            pass
+            print(monpoc.Monster.csv_headers())
+
+            for monster in monpoc.MONSTERS.values():
+                print(monster.to_csv())
+
         elif conf.cathegory == "Units":
             print(monpoc.Unit.csv_headers())
 
@@ -50,5 +55,5 @@ def main():
         raise
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())
