@@ -1,0 +1,37 @@
+Name;Agenda;Faction;Speed;Defense;Brawl;;;Blast;;;Cost;Abilities
+Meat Slave;Destroyers;Lords of Cthul;4;2;0;0;0;0;0;0;2;Incubator
+Spitter;Destroyers;Lords of Cthul;4;3;0;0;0;5;1;1;1;Action: Extinguisher, All Terrain
+Spitter Elite;Destroyers;Lords of Cthul;4;3;0;0;0;5;1;2;2;Action: Extinguisher, All Terrain, Commander
+Squix;Destroyers;Lords of Cthul;6;2;1;1;1;3;2;0;1;Disruption, Flight, High Mobility
+Squix Elite;Destroyers;Lords of Cthul;6;2;1;1;2;3;2;1;2;Commander, Disruption, Flight, High Mobility
+Task Master;Destroyers;Lords of Cthul;5;4;1;3;2;0;0;0;2;Fling, Action: Telekinesis, Motivator
+Hunter;Destroyers;Martian Menace;6;2;0;0;0;5;2;2;2;Flight, High Mobility, Lone Wolf, Penetrator
+Power Pod;Destroyers;Martian Menace;2;2;0;0;0;0;0;0;1;All Terrain, Amplify, Cargo
+Saucer;Destroyers;Martian Menace;5;2;0;0;0;0;0;0;1;Action: Abduct (2), Action: Transport, Flight, High Mobility
+Vanguard;Destroyers;Martian Menace;6;1;0;0;0;3;1;1;1;Destabilizer, Disintegrate, Flight, High Mobility
+Vanguard Elite;Destroyers;Martian Menace;6;1;0;0;0;3;1;2;2;Commander, Destabilizer, Disintegrate, Flight, High Mobility
+Belcher;Destroyers;Planet Eaters;4;2;1;1;0;5;2;1;1;Indirect Fire
+Belcher Elite;Destroyers;Planet Eaters;4;2;1;1;1;5;2;2;2;Commander, Indirect Fire
+Chomper;Destroyers;Planet Eaters;5;3;1;2;2;0;0;0;1;Power Gorge
+Chomper Elite;Destroyers;Planet Eaters;5;3;1;2;3;0;0;0;2;Power Gorge, Commander
+Crawler;Destroyers;Planet Eaters;4;4;0;0;0;0;0;0;1;All Terrain, Burrower, Dig In, Unstable
+Destructomite;Destroyers;Planet Eaters;6;2;1;3;1;0;0;0;1;All Terrain, Flank
+Explodohawk;Destroyers;Planet Eaters;6;1;1;6;3;0;0;0;1;Chain Reaction, High Mobility, Flight, Lone Wolf, Self-Destruct
+G-Tank;Protectors;G.U.A.R.D.;4;4;1;1;0;5;2;0;1;Aim, All Terrain
+G-Tank Elite;Protectors;G.U.A.R.D.;4;4;1;1;1;5;2;1;2;Aim, All Terrain, Commander
+Repair Truck;Protectors;G.U.A.R.D.;5;2;0;0;0;0;0;0;1;Action: Repair
+Rocket Chopper;Protectors;G.U.A.R.D.;5;2;0;0;0;3;2;1;1;Flight, High Mobility, Spotter
+Strike Fighter;Protectors;G.U.A.R.D.;7;1;0;0;0;3;2;1;1;Flight, High Mobility, Indirect Fire
+Strike Fighter Elite;Protectors;G.U.A.R.D.;7;1;0;0;0;3;2;2;2;Commander, Flight, High Mobility, Indirect Fire
+Interceptor;Protectors;Shadow Sun Syndicate;6;3;0;0;0;3;1;0;1;Action: Overdrive, Action: Transport, All Terrain
+S-Type Shinobi;Protectors;Shadow Sun Syndicate;5;3;1;2;1;0;0;0;1;Cloak, High Mobility, Side Step
+S-Type Shinobi Elite;Protectors;Shadow Sun Syndicate;5;3;1;2;2;0;0;0;2;Cloak, Commander, High Mobility, Side Step
+Shadow Gate;Protectors;Shadow Sun Syndicate;3;2;0;0;0;0;0;0;1;Action: Teleport, All Terrain, Cargo, Cloak, Shadow Field
+Sun Fighter;Protectors;Shadow Sun Syndicate;7;2;0;0;0;5;2;0;1;Anti-Air, Flight, High Mobility
+Sun Fighter Elite;Protectors;Shadow Sun Syndicate;7;2;0;0;0;5;2;1;2;Anti-Air, Commander, Flight, High Mobility
+Brontox;Protectors;Terrasaurs;4;4;1;1;1;0;0;0;2;Action: Nesting, Dig In
+Carnidon;Protectors;Terrasaurs;4;3;1;2;2;0;0;0;1;
+Carnidon Elite;Protectors;Terrasaurs;4;3;1;2;2;0;0;0;2;Commander, Flank
+Raptix;Protectors;Terrasaurs;6;2;1;1;1;0;0;0;1;Anti-Air, High Mobility
+Raptix Elite;Protectors;Terrasaurs;6;2;1;1;2;0;0;0;2;Anti-Air, Commander, High Mobility
+Spikodon;Protectors;Terrasaurs;4;3;1;1;0;4;2;2;2;Explosion

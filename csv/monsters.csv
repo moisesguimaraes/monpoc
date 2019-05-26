@@ -1,0 +1,15 @@
+Name;Agenda;Faction;Speed;Hyper Speed;Defense;Hyper Defense;Brawl;;;Hyper Brawl;;;Blast;;;Hyper Blast;;;Power;;;Hyper Power;;;Health;Hyper Health;Abilities;Hyper Abilities
+Cthugrosh;Destroyers;Lords of Cthul;6;6;8;8;1;7;4;1;8;5;3;5;3;5;5;4;1;6;4;1;7;4;11;5;Action: Sacrifice, Action: Summon, Action: Telekinesis, High Mobility;Action: Summon, Action: Telekinesis, Fling, High Mobility, Terrify
+Yasheth;Destroyers;Lords of Cthul;6;7;8;9;1;7;3;1;8;5;0;0;0;0;0;0;1;6;4;1;6;5;11;5;High Mobility, Penetrator, Side Step, Vampirism;Arcane Void, High Mobility, Lightning Attack, Penetrator, Siphon
+Ares Mothership;Destroyers;Martian Menace;7;7;8;8;1;6;3;1;6;4;3;6;4;5;6;5;1;5;4;1;5;4;11;5;Action: Abduct (4), Action: Transport, Flight, High Mobility, Manufacture, Mechanical, Steady;Flight, High Mobility, Hit & Run, Manufacture, Mechanical, Spotter, Steady, Tactical Command
+Deimos-9;Destroyers;Martian Menace;6;6;8;8;1;7;4;1;8;5;3;4;3;3;4;4;1;6;4;1;7;5;11;5;Flank, Grappler, Mechanical, Power Gorge;Energy Cycle, Flank, Fling, Grappler, Lightning Attack, Mechanical
+Gorghadra;Destroyers;Planet Eaters;6;6;8;9;1;8;4;1;9;5;3;4;4;3;5;5;1;7;4;1;8;5;11;5;Chain Reaction, Demolisher, Disintegrate, Riled;Annhilate, Chain Reaction, Demolisher, Disintegrate, Riled, Unearthly Rage
+Rogzor;Destroyers;Planet Eaters;6;7;8;8;1;6;3;1;6;4;5;6;4;5;8;6;1;5;3;1;5;4;10;5;Devastation, High Impact, Penetrator;Beat Back, Devastation, High Impact, Penetrator, Return Fire
+Hammerklak;Destroyers;Subterran Uprising;7;7;8;9;1;6;4;1;9;6;0;0;0;0;0;0;1;6;4;1;9;6;10;5;Action: Sprint, Cloak, Crunch, High Mobility, Side Step, Tunneler;Action: Sprint, Crunch, Energy Cycle, High Mobility, Power Gorge, Power Gorge
+Defender X;Protectors;G.U.A.R.D.;6;6;8;8;1;7;4;1;7;5;3;7;4;3;7;5;1;5;4;1;6;4;11;5;Disruption, High Mobility, Mechanical, Safeguard;Beat Back, Disruption, Energy Cycle, High Mobility, Mechanical, Safeguard
+Sky Sentinel;Protectors;G.U.A.R.D.;7;7;9;9;1;6;3;1;6;4;5;6;4;5;7;5;1;5;3;1;5;4;11;5;Anti-Air, Flight, High Mobility, Mechanical, Wing Leader;Flight, High Mobility, Mechanical, Power Gorge, Rapid Fire, Wing Leader
+Zor-Maxim;Protectors;Shadow Sun Syndicate;7;7;9;10;1;7;4;1;7;5;0;0;0;3;6;4;1;7;3;1;8;5;10;5;Action: Teleport, High Mobility, Penetrator, Side Step;Action: Teleport, Energy Cycle, High Mobility, Penetrator, Rapid Fire
+Zor-Raiden;Protectors;Shadow Sun Syndicate;7;7;9;9;1;8;4;1;8;6;0;0;0;3;4;4;1;6;4;1;7;4;10;5;Combat Coordination, High Mobility, Hit & Run, Reposition;Combat Coordination, Flank, High Mobility, Hit & Run, Reposition, Weapon Master
+Armodax;Protectors;Terrasaurs;6;6;7;8;1;7;4;1;8;5;0;0;0;0;0;0;1;6;4;1;7;5;12;6;Armored, Demolisher, Power Gorge, Resilience;Armored, Beat Back, Resilience, Riled, Unearthly Rage
+Terra Khan;Protectors;Terrasaurs;6;8;8;8;1;8;4;1;9;6;5;5;3;3;7;4;1;6;4;1;7;5;11;5;Feeding Frenzy, Munch, Stampede;Blood Rage, Explosion, Feeding Frenzy, Lightning Attack
+Krakenoctus;Protectors;Tritons;5;5;9;9;1;8;4;1;9;5;0;0;0;3;5;4;1;7;4;1;8;5;12;6;Fling, Grappler, Lightning Attack, Reach, Waterlogged;Fling, Grappler, Power Drain, Reach, Slingshot, Waterlogged, Windup
