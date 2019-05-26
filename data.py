@@ -1,4 +1,5 @@
 # Source: http://monpoc.net/MonpocListBuilder/js/modelData.js
+# flake8: noqa
 
 monsters = [
     [
