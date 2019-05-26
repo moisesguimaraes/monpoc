@@ -1,7 +1,7 @@
 # Source: http://monpoc.net/MonpocListBuilder/js/modelData.js
 # flake8: noqa
 
-monsters = [
+MONSTERS_DATA = [
     [
         "Cthugrosh",
         "Destroyers",
@@ -503,7 +503,7 @@ monsters = [
         ],
     ],
 ]
-units = [
+UNITS_DATA = [
     [
         "Meat Slave",
         "Destroyers",
@@ -914,7 +914,7 @@ units = [
         [["Explosion", 0]],
     ],
 ]
-buildings = [
+BUILDINGS_DATA = [
     ["Apartment Building", None, None, "Building", 5, [["High Density", 0]]],
     [
         "Communications Array",
@@ -1038,7 +1038,7 @@ buildings = [
         ],
     ],
 ]
-abilities = [
+ABILITIES_DATA = [
     [
         "Action: Abduct (2)",
         "This model can spend one Action Die to perform an Abduct action during its Activation. If this model is adjacent to an enemy unit with DEF 2 or less, return the enemy unit to your opponent's unit reserves.",
