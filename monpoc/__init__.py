@@ -34,11 +34,11 @@ Faction = Enum(
 )
 
 
-@dataclass(order=True)
+@dataclass
 class Attack:
-    reach: int = 0
-    action: int = 0
     booster: int = 0
+    action: int = 0
+    reach: int = 0
 
     @classmethod
     def from_data(cls, data):
@@ -62,7 +62,10 @@ class Attack:
         return f"Rng:{self.reach} {self.action}+{self.booster}"
 
     def to_csv(self):
-        return f"{self.reach};{self.action};{self.booster}"
+        return f"{self.booster};{self.action};{self.reach}"
+
+    def rating(self):
+        return self.booster * 100 + self.action * 10 + self.reach
 
 
 @dataclass
