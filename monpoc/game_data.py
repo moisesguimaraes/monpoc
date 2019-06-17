@@ -253,6 +253,45 @@ MONSTERS_DATA = [
         ],
     ],
     [
+        "King Kondo",
+        "Protectors",
+        "Empire of the Apes",
+        6,
+        8,
+        "7+4",
+        "-",
+        "6+4",
+        11,
+        [
+            ["Blood Rage", 0],
+            ["Demolition", 1],
+            ["Grappler", 0],
+            ["High Mobility", 0],
+            ["Tantrum", 0],
+        ],
+        [
+            [
+                "Hyper King Kondo",
+                "Protectors",
+                "Empire of the Apes",
+                6,
+                8,
+                "9+6",
+                "-",
+                "8+5",
+                6,
+                [
+                    ["Blood Rage", 0],
+                    ["Demolition", 1],
+                    ["Grappler", 0],
+                    ["High Mobility", 0],
+                    ["Riled", 0],
+                    ["Weapon Master", 1],
+                ],
+            ]
+        ],
+    ],
+    [
         "Defender X",
         "Protectors",
         "G.U.A.R.D.",
@@ -720,6 +759,72 @@ UNITS_DATA = [
         ],
     ],
     [
+        "Ape Gunner",
+        "Protectors",
+        "Empire of the Apes",
+        5,
+        2,
+        "2+1",
+        "Rng:5 2+1",
+        "1",
+        [["All Terrain", 0]],
+    ],
+    [
+        "Ape Gunner Elite",
+        "Protectors",
+        "Empire of the Apes",
+        5,
+        2,
+        "2+2",
+        "Rng:5 2+2",
+        "2",
+        [["All Terrain", 0], ["Commander", 0]],
+    ],
+    [
+        "Ape Infiltrator",
+        "Protectors",
+        "Empire of the Apes",
+        6,
+        2,
+        "1+1",
+        "-",
+        "1",
+        [["Cloak", 0], ["Forward Observer", 0], ["High Mobility", 0], ["Spotter", 0]],
+    ],
+    [
+        "Assault Ape",
+        "Protectors",
+        "Empire of the Apes",
+        4,
+        3,
+        "2+1",
+        "-",
+        "1",
+        [["Fling", 1], ["High Mobility", 0], ["Power Hitter", 0]],
+    ],
+    [
+        "Assault Ape Elite",
+        "Protectors",
+        "Empire of the Apes",
+        4,
+        3,
+        "2+2",
+        "-",
+        "2",
+        [["Commander", 0], ["Fling", 1], ["High Mobility", 0], ["Power Hitter", 0]],
+    ],
+    [
+        "Rocket Ape",
+        "Protectors",
+        "Empire of the Apes",
+        5,
+        2,
+        "1+0",
+        "Rng:5 2+2",
+        "2",
+        [["Aim", 0], ["Lone Wolf", 0], ["Multi-Fire", 2]],
+    ],
+    [
         "G-Tank",
         "Protectors",
         "G.U.A.R.D.",
@@ -915,7 +1020,7 @@ UNITS_DATA = [
     ],
 ]
 BUILDINGS_DATA = [
-    ["Apartment Building", None, None, "Building", 5, [["High Density", 0]]],
+    ["Apartment Building", "", "", "Building", 5, [["High Density", 0]]],
     [
         "Communications Array",
         "",
@@ -926,8 +1031,8 @@ BUILDINGS_DATA = [
     ],
     [
         "Corporate Headquarters",
-        None,
-        None,
+        "",
+        "",
         "Building",
         6,
         [["Intel", 0], ["Trade Policy", 0]],
@@ -962,6 +1067,14 @@ BUILDINGS_DATA = [
     ],
     ["Imperial State Building", "", "", "Building", 7, [["Action: City Planning", 0]]],
     ["Industrial Complex", "", "", "Building", 6, [["Fuel Depot", 0]]],
+    [
+        "Jungle Fortress",
+        "",
+        "",
+        "Building",
+        7,
+        [["Action: Patrol Base", 0], ["Empire of the Apes Base", 0]],
+    ],
     [
         "Martian Command Post",
         "",
@@ -1072,6 +1185,10 @@ ABILITIES_DATA = [
         "During this model's activation, this model can spend one Action Die to perform an Overdrive Action. Advance this model up to its SPD, even if it has already advanced this turn.",
     ],
     [
+        "Action: Patrol Base",
+        "During your unit Activation, this model can spend one Action Die to perform a Patrol Base action. Choose one unit from your unit reserves and place it in play adjacent to this model. The placed model cannot advance this turn.",
+    ],
+    [
         "Action: Psychokinesis",
         "During your Unit or Monster Activation, this model can spend one Action Die to perform a Psychokinesis action. Choose one unit within three spaces of this model. Move the chosen unit one space.",
     ],
@@ -1113,7 +1230,7 @@ ABILITIES_DATA = [
     ],
     [
         "Aim",
-        "This model gains +1 Boost Die when particiapating in blast attacks if it did not move this activation.",
+        "This model gains +1 Boost Die when particiapating in blast attacks if it did not advance this activation.",
     ],
     ["All Terrain", "This model treats rough terrain as open terrain while advancing."],
     [
@@ -1169,6 +1286,10 @@ ABILITIES_DATA = [
         "When this model makes an attack, gain +1 Power Die for every building destroyed as a result of its attack.",
     ],
     [
+        "Demolition",
+        "If this attack his a building, all units adjacent to the target building with a DEF equal to of less than the number of strikes rolled suffer 1 damage point as a result of this attack.",
+    ],
+    [
         "Destabilizer",
         "This model gains +1 Boost Die when participating in brawl or blast attacks that target a building.",
     ],
@@ -1197,6 +1318,10 @@ ABILITIES_DATA = [
         "If a mechanical monster destroys this model with a brawl attack, after the attack is resolved restore one point of health to the monster. ",
     ],
     [
+        "Empire of the Apes Base",
+        "Once per turn, if you are securing one or more buildings with Empire of the Apes Base and spawn a Empire of the Apes unit, reduce its cost by 1.",
+    ],
+    [
         "Energy Cycle",
         "If you roll two or more Action Dice on an attack made by this model and the attack hits an enemy model, after the attack is resolved you can move one Action Die from your Unit Pool to your Monster Pool.",
     ],
@@ -1220,6 +1345,7 @@ ABILITIES_DATA = [
         "Fling",
         "When this attack hits a unit, choose a building or enemy model within five spaces of the unit hit. Roll the dice in play. If the chosen model's DEF is equal to or less than the number of strikes rolled, it takes 1 damage point.",
     ],
+    ["Forward Observer", "Enemy models within two spaces of this model lose Cloak."],
     ["Fuel Depot", "If you are securing this building, allied models gain +1 SPD."],
     [
         "G.U.A.R.D. Base",
@@ -1279,6 +1405,10 @@ ABILITIES_DATA = [
         "Other allied models that begin their advance within two spaces of this model gain +1 SPD.",
     ],
     [
+        "Multi-Fire",
+        "After this model resolves a blast attack, it can immediately make a blast attack with the dice in play against another enemy model. This model can make two additional attacks in this way. This model cannot make a  blast attack against the same model more than once in the same activation.",
+    ],
+    [
         "Munch",
         "If this monster destroys a unit with this attack, after the attack is resolved restore one point of health to this monster.",
     ],
@@ -1305,6 +1435,10 @@ ABILITIES_DATA = [
     [
         "Power Gorge",
         "When this attack destroys an enemy model, you gain an additional Power Die.",
+    ],
+    [
+        "Power Hitter",
+        "This model can spend one Power Die when participating in an attack. If it does, this attack does not generate any Power Dice.",
     ],
     [
         "Power Producer",
@@ -1385,6 +1519,10 @@ ABILITIES_DATA = [
     [
         "Tactical Command",
         "While this model is in play, Faction units' blast attacks gain Hit & Run.",
+    ],
+    [
+        "Tantrum",
+        "When this model is hit by a body slam or throw power attack, after the attack is resolved you can move this monster up to two spaces, then return all non-Faction units adjacent to this monster to their unit reserves.",
     ],
     [
         "Terrasaurs Base",
