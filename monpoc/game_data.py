@@ -856,7 +856,7 @@ UNITS_DATA = [
         3,
         "2+2",
         "Rng:3 1+1",
-        "",
+        "2",
         [["Commander", 0], ["Dual Attack", 0]],
     ],
     [
@@ -899,7 +899,7 @@ UNITS_DATA = [
         5,
         2,
         "1",
-        "Rng3: 2+2",
+        "Rng:3 2+2",
         "2",
         [["Explosion", 2], ["High Mobility", 0]],
     ],

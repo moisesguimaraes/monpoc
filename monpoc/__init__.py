@@ -19,11 +19,13 @@ _FACTIONS = {
     1: ["G.U.A.R.D.", "GUARD"],
     2: ["Shadow Sun Syndicate", "SHADOW_SUN_SYNDICATE"],
     3: ["Terrasaurs", "TERRASAURS"],
-    4: ["Tritons", "TRITONS"],
-    5: ["Lords of Cthul", "LORDS_OF_CTHUL"],
-    6: ["Martian Menace", "MARTIAN_MENACE"],
-    7: ["Planet Eaters", "PLANET_EATERS"],
+    4: ["Lords of Cthul", "LORDS_OF_CTHUL"],
+    5: ["Martian Menace", "MARTIAN_MENACE"],
+    6: ["Planet Eaters", "PLANET_EATERS"],
+    7: ["Tritons", "TRITONS"],
     8: ["Subterran Uprising", "SUBTERRAN_UPRISING"],
+    9: ["Empire of the Apes", "APES"],
+    10: ["UberCorp International", "UBERCORP"],
 }
 
 Faction = Enum(
