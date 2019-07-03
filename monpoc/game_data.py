@@ -1,4 +1,4 @@
-# Source: http://monpoc.net/MonpocListBuilder/js/modelData.js
+# Source: https://monpoc.net/MonpocListBuilder/js/modelData.js
 # flake8: noqa
 
 MONSTERS_DATA = [
@@ -248,6 +248,85 @@ MONSTERS_DATA = [
                     ["High Mobility", 0],
                     ["Power Gorge", 1],
                     ["Power Gorge", 3],
+                ],
+            ]
+        ],
+    ],
+    [
+        "Cyber Khan",
+        "Destroyers",
+        "UberCorp International",
+        6,
+        8,
+        "6+3",
+        "Rng:5 7+4",
+        "6+4",
+        11,
+        [
+            ["Destabilizer", 0],
+            ["High Mobility", 0],
+            ["Mechanical", 0],
+            ["Power Drain", 2],
+            ["Seismic Step", 0],
+            ["Strip Mining", 0],
+        ],
+        [
+            [
+                "Hyper Cyber Khan",
+                "Destroyers",
+                "UberCorp International",
+                6,
+                8,
+                "7+4",
+                "Rng:5 8+5",
+                "7+5",
+                5,
+                [
+                    ["Demolisher", 0],
+                    ["High Mobility", 0],
+                    ["Mechanical", 0],
+                    ["Penetrator", 3],
+                    ["Rapid Fire", 0],
+                    ["Siphon", 2],
+                    ["Spotter", 0],
+                ],
+            ]
+        ],
+    ],
+    [
+        "General Hondo",
+        "Protectors",
+        "Empire of the Apes",
+        5,
+        8,
+        "6+3",
+        "Rng:5 7+4",
+        "6+3",
+        10,
+        [
+            ["Armored", 0],
+            ["Defense Array", 0],
+            ["Explosion", 2],
+            ["Guerrilla Tactics", 0],
+            ["Indirect Fire", 2],
+        ],
+        [
+            [
+                "Hyper General Hondo",
+                "Protectors",
+                "Empire of the Apes",
+                6,
+                8,
+                "7+5",
+                "Rng:5 8+5",
+                "7+5",
+                5,
+                [
+                    ["Energy Cycle", 0],
+                    ["Explosion", 2],
+                    ["High Impact", 0],
+                    ["Indirect Fire", 2],
+                    ["Rapid Fire", 0],
                 ],
             ]
         ],
@@ -759,6 +838,89 @@ UNITS_DATA = [
         ],
     ],
     [
+        "Carnitron",
+        "Destroyers",
+        "UberCorp International",
+        4,
+        3,
+        "2+1",
+        "Rng:3 1+0",
+        "1",
+        [["Dual Attack", 0]],
+    ],
+    [
+        "Carnitron Elite",
+        "Destroyers",
+        "UberCorp International",
+        4,
+        3,
+        "2+2",
+        "Rng:3 1+1",
+        "",
+        [["Commander", 0], ["Dual Attack", 0]],
+    ],
+    [
+        "Robo Brontox",
+        "Destroyers",
+        "UberCorp International",
+        4,
+        4,
+        "1+1",
+        "-",
+        "2",
+        [["Feedback", 0], ["Intensify", 0], ["Jam", 0]],
+    ],
+    [
+        "Shinobot",
+        "Destroyers",
+        "UberCorp International",
+        5,
+        3,
+        "2+1",
+        "-",
+        "1",
+        [["Action: Sprint", 0], ["High Mobility", 0]],
+    ],
+    [
+        "Shinobot Elite",
+        "Destroyers",
+        "UberCorp International",
+        5,
+        3,
+        "2+2",
+        "-",
+        "2",
+        [["Action: Sprint", 0], ["Commander", 0], ["High Mobility", 0]],
+    ],
+    [
+        "Shinobot Gunner",
+        "Destroyers",
+        "UberCorp International",
+        5,
+        2,
+        "1",
+        "Rng3: 2+2",
+        "2",
+        [["Explosion", 2], ["High Mobility", 0]],
+    ],
+    [
+        "Uber Jet",
+        "Destroyers",
+        "UberCorp International",
+        6,
+        1,
+        "-",
+        "Rng:3 1+1",
+        "2",
+        [
+            ["Action: Teleport", 0],
+            ["Flight", 0],
+            ["Force Field", 0],
+            ["High Mobility", 0],
+            ["Shield Resonance", 0],
+        ],
+    ],
+    [
         "Ape Gunner",
         "Protectors",
         "Empire of the Apes",
@@ -1257,7 +1419,7 @@ ABILITIES_DATA = [
     ],
     [
         "Blood Rage",
-        "While this model is in play, Faction units gain +1 Boost Die when participating in Brawl attacks.",
+        "While this model is in play, allied Faction units gain +1 Boost Die when participating in Brawl attacks.",
     ],
     ["Burrower", "This model is immune to swat attacks."],
     ["Cargo", "This unit is cargo."],
@@ -1271,7 +1433,7 @@ ABILITIES_DATA = [
     ],
     [
         "Combat Coordination",
-        "While this model is in play, Faction units' brawl attacks gain the Hit & Run special rule.",
+        "While this model is in play, allied Faction units' brawl attacks gain the Hit & Run special rule.",
     ],
     [
         "Commander",
@@ -1280,6 +1442,10 @@ ABILITIES_DATA = [
     [
         "Crunch",
         "When you roll a super strike on an Action Die on one of this monster's attack rolls, that attack does super damage.",
+    ],
+    [
+        "Defense Array",
+        "Allied Faction units gain Force Field while within 3 spaces of this model. (A model with Force Field gains +1 DEF against blast attacks.)",
     ],
     [
         "Demolisher",
@@ -1314,6 +1480,10 @@ ABILITIES_DATA = [
         "Enemy models attacking while within two spaces of this model lose one Boost Die on their attack rolls.",
     ],
     [
+        "Dual Attack",
+        "This model can participate in a brawl attack in addition to any other attack it participates in during each of your Unit Activations.",
+    ],
+    [
         "Electrical Node",
         "If a mechanical monster destroys this model with a brawl attack, after the attack is resolved restore one point of health to the monster. ",
     ],
@@ -1330,8 +1500,12 @@ ABILITIES_DATA = [
         "If this attack hits a unit, all units adjacent to the target unit with a DEF equal to or less than the number of strikes rolled also suffer 1 damage point as a result of this attack. When determining the DEF of adjacent models, add any bonuses to DEF against blast attacks, including cover.",
     ],
     [
+        "Feedback",
+        "If this model is destroyed by an adjacent monster, you gain one Power Die. That monster's controller loses one Power Die.",
+    ],
+    [
         "Feeding Frenzy",
-        "When this monster attacks a monster that is adjacent to any Faction unit, this model's attack does Super Damage.",
+        "When this monster attacks a monster that is adjacent to any allied Faction unit, this model's attack does Super Damage.",
     ],
     [
         "Flank",
@@ -1345,6 +1519,7 @@ ABILITIES_DATA = [
         "Fling",
         "When this attack hits a unit, choose a building or enemy model within five spaces of the unit hit. Roll the dice in play. If the chosen model's DEF is equal to or less than the number of strikes rolled, it takes 1 damage point.",
     ],
+    ["Force Field", "This model gain +1 DEF against blast attack."],
     ["Forward Observer", "Enemy models within two spaces of this model lose Cloak."],
     ["Fuel Depot", "If you are securing this building, allied models gain +1 SPD."],
     [
@@ -1355,10 +1530,14 @@ ABILITIES_DATA = [
         "Grappler",
         "Enemy models cannot move through this model or models adjacent to it. Enemy models are not immune to hazards adjacent to this model.",
     ],
+    [
+        "Guerrilla Tactics",
+        "Allied Faction units gain Indirect Fire while within 3 spaces of this model.",
+    ],
     ["High Density", "This building is not limited to four per player."],
     [
         "High Impact",
-        "While this model is in play, Faction units gain +1 Boost Die when participating in blast attacks.",
+        "While this model is in play, allied Faction units gain +1 Boost Die when participating in blast attacks.",
     ],
     [
         "High Mobility",
@@ -1381,6 +1560,14 @@ ABILITIES_DATA = [
     [
         "Intel",
         "While you are securing this building, enemy models lose Cloak and cannot gain it.",
+    ],
+    [
+        "Intensify",
+        "If this model is holding an objective space, other allied models within two spaces of it gain +1 Boost Die when participating in a brawl or blast attack.",
+    ],
+    [
+        "Jam",
+        "Enemy models and buildings your opponent has secured cannot use Actions while within two spaces of this model.",
     ],
     [
         "Lightning Attack",
@@ -1482,6 +1669,10 @@ ABILITIES_DATA = [
         "If you are securing this building, allied units adjacent to this building gain +1 Boost Die when participating in brawl or blast attacks.",
     ],
     [
+        "Seismic Step",
+        "Once during each of your Monster Activations, if this model makes a stomp power attack, immediately after the attack is resolved it can move up to one space and make another stomp power attack with the dice in play.",
+    ],
+    [
         "Self-Destruct",
         "If this unit hits an enemy model with an attack, after the attack is resolved move this unit to your unit reserves.",
     ],
@@ -1493,6 +1684,10 @@ ABILITIES_DATA = [
     [
         "Shadow Sun Syndicate Base",
         "Once per turn, if you are securing one or more buildings with Shadow Sun Syndicate Base and spawn a Shadow Sun Syndicate unit, reduce its cost by 1.",
+    ],
+    [
+        "Shield Resonance",
+        "While adjacent to this model, allied Faction units gain Force Field.",
     ],
     [
         "Side Step",
@@ -1511,14 +1706,18 @@ ABILITIES_DATA = [
         "Spotter",
         "Enemy models within two spaces of this model have their DEF reduced by 1 against blast atatcks made by allied models, to a minimum of 1.",
     ],
-    ["Stampede", "While this model is in play, Faction units gain +1 SPD."],
+    ["Stampede", "While this model is in play, allied Faction units gain +1 SPD."],
     [
         "Steady",
         "Enemy monsters do not roll Boost Dice when making body slam power attacks against this model.",
     ],
     [
+        "Strip Mining",
+        "While this model is in play, allied Faction units' brawl attacks gain the Destabilizer special rule.",
+    ],
+    [
         "Tactical Command",
-        "While this model is in play, Faction units' blast attacks gain Hit & Run.",
+        "While this model is in play, allied Faction units' blast attacks gain the Hit & Run special rule.",
     ],
     [
         "Tantrum",
@@ -1559,12 +1758,12 @@ ABILITIES_DATA = [
     ],
     [
         "Waterlogged",
-        "This model is immune to hazards while advancing. When this model advances into a hazard, flip it to rubble side.",
+        "When this model advances onto a debris tile that is a hazard, flip it to\nthe rubble side.",
     ],
     ["Weapon Master", "This attack does Super Damage."],
     ["Windup", "This monster's swat and throw power attacks do Super Damage"],
     [
         "Wing Leader",
-        "While this model is in play, Faction units with the Flight special rule gain +1 Boost Die when participating in blast attacks.",
+        "While this model is in play, allied Faction units with the Flight special rule gain +1 Boost Die when participating in blast attacks.",
     ],
 ]
