@@ -38,9 +38,9 @@ Faction = Enum(
 
 @dataclass
 class Attack:
-    booster: int = 0
-    action: int = 0
     reach: int = 0
+    action: int = 0
+    booster: int = 0
 
     @classmethod
     def from_data(cls, data):
