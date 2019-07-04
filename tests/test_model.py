@@ -68,7 +68,7 @@ class TestUnit(unittest.TestCase):
             brawl=Attack(1, 1, 0),
             blast=Attack(5, 2, 0),
             cost=1,
-            abilities=[ABILITIES["Aim"], ABILITIES["All Terrain"]],
+            abilities=[(ABILITIES["Aim"], 0), (ABILITIES["All Terrain"], 0)],
         )
 
     def test_from_data(self):
@@ -112,12 +112,12 @@ class TestMonster(unittest.TestCase):
             power=Attack(1, 7, 4),
             health=5,
             abilities=[
-                ABILITIES["Combat Coordination"],
-                ABILITIES["Flank"],
-                ABILITIES["High Mobility"],
-                ABILITIES["Hit & Run"],
-                ABILITIES["Reposition"],
-                ABILITIES["Weapon Master"],
+                (ABILITIES["Combat Coordination"], 0),
+                (ABILITIES["Flank"], 0),
+                (ABILITIES["High Mobility"], 0),
+                (ABILITIES["Hit & Run"], 1),
+                (ABILITIES["Reposition"], 0),
+                (ABILITIES["Weapon Master"], 1),
             ],
         )
         self.monster = Monster(
@@ -131,10 +131,10 @@ class TestMonster(unittest.TestCase):
             power=Attack(1, 6, 4),
             health=10,
             abilities=[
-                ABILITIES["Combat Coordination"],
-                ABILITIES["High Mobility"],
-                ABILITIES["Hit & Run"],
-                ABILITIES["Reposition"],
+                (ABILITIES["Combat Coordination"], 0),
+                (ABILITIES["High Mobility"], 0),
+                (ABILITIES["Hit & Run"], 1),
+                (ABILITIES["Reposition"], 0),
             ],
             hyper_form=hyper_form,
         )
@@ -190,8 +190,8 @@ class TestMonster(unittest.TestCase):
             self.monster.to_csv(),
             "Zor-Raiden;Protectors;Shadow Sun Syndicate;7;7"
             ";9;9;1;8;4;1;8;6;0;0;0;3;4;4;1;6;4;1;7;4;10;5;Combat Coordination, "
-            "High Mobility, Hit & Run, Reposition;Combat Coordination, Flank, "
-            "High Mobility, Hit & Run, Reposition, Weapon Master",
+            "High Mobility, Hit & Run - Brawl, Reposition;Combat Coordination, Flank, "
+            "High Mobility, Hit & Run - Brawl, Reposition, Weapon Master - Brawl",
         )
 
 

@@ -80,6 +80,17 @@ class Ability:
         return cls(data[0], data[1])
 
     @staticmethod
+    def scope(n):
+        s = {
+            0: "",
+            1: " - Brawl",
+            2: " - Blast",
+            3: " - Power",
+        }
+
+        return s[n]
+
+    @staticmethod
     def csv_headers():
         return "Name;Description"
 
@@ -135,7 +146,7 @@ class Unit(Model):
 
     @classmethod
     def from_data(cls, data):
-        abilities = [ABILITIES[a[0]] for a in data[8]]
+        abilities = [(ABILITIES[a[0]], a[1]) for a in data[8]]
 
         return Unit(
             name=data[0],
@@ -157,7 +168,7 @@ class Unit(Model):
         return (
             f"{self.name};{self.agenda.name};{self.faction.name};{self.speed};"
             f"{self.defense};{self.brawl.to_csv()};{self.blast.to_csv()};{self.cost};"
-            f"{', '.join([_.name for _ in self.abilities])}"
+            f"{', '.join([_[0].name + Ability.scope(_[1]) for _ in self.abilities])}"
         )
 
 
@@ -171,7 +182,7 @@ class Monster(Unit):
 
     @classmethod
     def from_data(cls, data):
-        abilities = [ABILITIES[a[0]] for a in data[9]]
+        abilities = [(ABILITIES[a[0]], a[1]) for a in data[9]]
 
         hyper_form = Monster.from_data(data[10][0]) if len(data) > 10 else None
 
@@ -205,8 +216,8 @@ class Monster(Unit):
             f"{hyper.speed};{self.defense};{hyper.defense};{self.brawl.to_csv()};"
             f"{hyper.brawl.to_csv()};{self.blast.to_csv()};{hyper.blast.to_csv()};"
             f"{self.power.to_csv()};{hyper.power.to_csv()};{self.health};{hyper.health};"
-            f"{', '.join([_.name for _ in self.abilities])};"
-            f"{', '.join([_.name for _ in hyper.abilities])}"
+            f"{', '.join([_[0].name + Ability.scope(_[1]) for _ in self.abilities])};"
+            f"{', '.join([_[0].name + Ability.scope(_[1]) for _ in hyper.abilities])}"
         )
 
 
