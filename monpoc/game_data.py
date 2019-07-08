@@ -190,7 +190,7 @@ MONSTERS_DATA = [
         "Rng:5 6+4",
         "5+3",
         10,
-        [["Devastation", 0], ["High Impact", 0], ["Penetrator", 0]],
+        [["Devastation", 2], ["High Impact", 0], ["Penetrator", 2]],
         [
             [
                 "Hyper Rogzor",
@@ -203,10 +203,10 @@ MONSTERS_DATA = [
                 "5+4",
                 5,
                 [
-                    ["Beat Back", 0],
-                    ["Devastation", 0],
+                    ["Beat Back", 2],
+                    ["Devastation", 2],
                     ["High Impact", 0],
-                    ["Penetrator", 0],
+                    ["Penetrator", 2],
                     ["Return Fire", 0],
                 ],
             ]
