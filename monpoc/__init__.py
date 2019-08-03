@@ -26,6 +26,7 @@ _FACTIONS = {
     8: ["Subterran Uprising", "SUBTERRAN_UPRISING"],
     9: ["Empire of the Apes", "APES"],
     10: ["UberCorp International", "UBERCORP"],
+    11: ["Green Fury", "GREEN_FURY"],
 }
 
 Faction = Enum(
@@ -81,12 +82,7 @@ class Ability:
 
     @staticmethod
     def scope(n):
-        s = {
-            0: "",
-            1: " - Brawl",
-            2: " - Blast",
-            3: " - Power",
-        }
+        s = {0: "", 1: " - Brawl", 2: " - Blast", 3: " - Power"}
 
         return s[n]
 

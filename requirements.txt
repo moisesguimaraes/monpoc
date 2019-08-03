@@ -1,1 +1,1 @@
-oslo_config
+oslo.config>=6.11.0 # Apache-2.0

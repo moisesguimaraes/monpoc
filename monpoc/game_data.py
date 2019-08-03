@@ -443,6 +443,44 @@ MONSTERS_DATA = [
         ],
     ],
     [
+        "Sergeant Titanica",
+        "Protectors",
+        "Green Fury",
+        7,
+        9,
+        "7+4",
+        "-",
+        "6+4",
+        10,
+        [
+            ["Energy Cycle", 0],
+            ["Motivator", 0],
+            ["Precision Strike", 1],
+            ["Reposition", 0],
+        ],
+        [
+            [
+                "Hyper Sergeant Titanica",
+                "Protectors",
+                "Green Fury",
+                7,
+                9,
+                "8+5",
+                "-",
+                "7+5",
+                5,
+                [
+                    ["Action: Tactical Shift", 0],
+                    ["Combo Strike", 1],
+                    ["Energy Cycle", 0],
+                    ["Lead from the Front", 0],
+                    ["Precision Strike", 1],
+                    ["Precision Strike", 3],
+                ],
+            ]
+        ],
+    ],
+    [
         "Zor-Maxim",
         "Protectors",
         "Shadow Sun Syndicate",
@@ -901,7 +939,7 @@ UNITS_DATA = [
         "1",
         "Rng:3 2+2",
         "2",
-        [["Explosion", 2], ["High Mobility", 0]],
+        [["Explosion", 0], ["High Mobility", 0]],
     ],
     [
         "Uber Jet",
@@ -1301,6 +1339,14 @@ BUILDINGS_DATA = [
         ],
     ],
     [
+        "UCI Industries",
+        "",
+        "",
+        "Building",
+        7,
+        [["Reverse Engineering", 0], ["UberCorp International Base", 0]],
+    ],
+    [
         "Void Gate",
         "",
         "",
@@ -1371,6 +1417,10 @@ ABILITIES_DATA = [
         "During this model's Activation, this model can spend one Action Die to perform a Summon action. Take one Faction unit from your unit reserves and place it in play adjacent to this model.",
     ],
     [
+        "Action: Tactical Shift",
+        "During your Monster Activation, this model can spend one Action Die to perform a Tactical Shift action. Advance any allied unit up to two spaces, even if it has already advanced this turn.",
+    ],
+    [
         "Action: Tectonic Shift",
         "During your Unit or Monster Activation, this model can spend one Action Die to perform a Tectonic Shift action. Advance one of your monsters up to two spaces.",
     ],
@@ -1434,6 +1484,10 @@ ABILITIES_DATA = [
     [
         "Combat Coordination",
         "While this model is in play, allied Faction units' brawl attacks gain the Hit & Run special rule.",
+    ],
+    [
+        "Combo Strike",
+        "If this attack hits, after the attack is resolved this model can immediately make a power attack.",
     ],
     [
         "Commander",
@@ -1570,6 +1624,10 @@ ABILITIES_DATA = [
         "Enemy models and buildings your opponent has secured cannot use Actions while within two spaces of this model.",
     ],
     [
+        "Lead from the Front",
+        "While within three spaces of this model, the blast and brawl attacks of allied units gain Precision Strike.",
+    ],
+    [
         "Lightning Attack",
         "This model can make a brawl attack in addition to any other attacks it makes during each of its activations.",
     ],
@@ -1631,6 +1689,7 @@ ABILITIES_DATA = [
         "Power Producer",
         "If you are securing one or more buildings with Power Producer when you Power Up, you gain one additional Power Die.",
     ],
+    ["Precision Strike", "You can reroll one Action Die on this attack."],
     [
         "Radar Network",
         "If you are securing this building, allied models not affected by Radar gain +1 RNG to their blast attacks.",
@@ -1655,6 +1714,10 @@ ABILITIES_DATA = [
     [
         "Return Fire",
         "When this model is missed by a blast attack, it can immediately make a blast attack with the dice in play.",
+    ],
+    [
+        "Reverse Engineering",
+        "This model has the actions of all other buildings in play. To perform an action, this model must spend one Power Die in addition to the normal Action Die cost.",
     ],
     [
         "Riled",
@@ -1738,6 +1801,10 @@ ABILITIES_DATA = [
     [
         "Tunneler",
         "Other allied models that begin an advance within two spaces of this model gain High Mobility during that advance.",
+    ],
+    [
+        "UberCorp International Base",
+        "Once per turn, if you are securing one or more  buildings with UberCorp International Base and spawn an UberCorp International unit, reduce its cost by 1.",
     ],
     [
         "Underground Network",
