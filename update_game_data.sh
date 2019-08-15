@@ -22,6 +22,8 @@ sed -i.bak "s/var monsters/MONSTERS_DATA/g" $DST
 sed -i.bak "s/var units/UNITS_DATA/g" $DST
 sed -i.bak "s/var buildings/BUILDINGS_DATA/g" $DST
 sed -i.bak "s/var abilities/ABILITIES_DATA/g" $DST
+sed -i.bak "s/var agendas/AGENDAS_DATA/g" $DST
+sed -i.bak "s/var factions/FACTIONS_DATA/g" $DST
 
 # cleanup
 rm $SRC *.bak

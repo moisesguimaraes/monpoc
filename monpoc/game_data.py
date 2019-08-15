@@ -1825,7 +1825,7 @@ ABILITIES_DATA = [
     ],
     [
         "Waterlogged",
-        "When this model advances onto a debris tile that is a hazard, flip it to\nthe rubble side.",
+        "This model is immune to hazards while advancing. When this model advances onto a debris tile that is a hazard, flip it to the rubble side.",
     ],
     ["Weapon Master", "This attack does Super Damage."],
     ["Windup", "This monster's swat and throw power attacks do Super Damage"],
@@ -1833,4 +1833,18 @@ ABILITIES_DATA = [
         "Wing Leader",
         "While this model is in play, allied Faction units with the Flight special rule gain +1 Boost Die when participating in blast attacks.",
     ],
+]
+AGENDAS_DATA = ["Destroyers", "Protectors"]
+FACTIONS_DATA = [
+    ["Empire of the Apes", "Protectors"],
+    ["G.U.A.R.D.", "Protectors"],
+    ["Green Fury", "Protectors"],
+    ["Lords of Cthul", "Destroyers"],
+    ["Martian Menace", "Destroyers"],
+    ["Planet Eaters", "Destroyers"],
+    ["Shadow Sun Syndicate", "Protectors"],
+    ["Subterran Uprising", "Destroyers"],
+    ["Terrasaurs", "Protectors"],
+    ["Tritons", "Protectors"],
+    ["UberCorp International", "Destroyers"],
 ]
