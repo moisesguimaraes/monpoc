@@ -3,7 +3,7 @@ from typing import Type, List
 from enum import Enum
 import itertools
 
-from monpoc import game_data
+from monpoc.game_data import DATA as _DATA
 
 
 _AGENDAS = {1: ["Protectors", "PROTECTORS"], 2: ["Destroyers", "DESTROYERS"]}
@@ -94,7 +94,7 @@ class Ability:
         return f"{self.name};{self.descryption}"
 
 
-ABILITIES = {d[0]: Ability.from_data(d) for d in game_data.ABILITIES_DATA}
+ABILITIES = {d[0]: Ability.from_data(d) for d in _DATA["abilities"]}
 
 
 @dataclass
@@ -130,7 +130,7 @@ class Building:
         )
 
 
-BUILDINGS = {d[0]: Building.from_data(d) for d in game_data.BUILDINGS_DATA}
+BUILDINGS = {d[0]: Building.from_data(d) for d in _DATA["buildings"]}
 
 
 @dataclass
@@ -168,7 +168,7 @@ class Unit(Model):
         )
 
 
-UNITS = {d[0]: Unit.from_data(d) for d in game_data.UNITS_DATA}
+UNITS = {d[0]: Unit.from_data(d) for d in _DATA["units"]}
 
 
 @dataclass
@@ -217,4 +217,4 @@ class Monster(Unit):
         )
 
 
-MONSTERS = {d[0]: Monster.from_data(d) for d in game_data.MONSTERS_DATA}
+MONSTERS = {d[0]: Monster.from_data(d) for d in _DATA["monsters"]}
