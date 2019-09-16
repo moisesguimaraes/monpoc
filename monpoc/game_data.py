@@ -421,6 +421,38 @@ DATA = {
             ],
         ],
         [
+            "White Dajan",
+            "Protectors",
+            "Empire of the Apes",
+            6,
+            8,
+            "7+4",
+            "-",
+            "7+4",
+            11,
+            [["Demolisher", 0], ["Fling", 1], ["Steady", 0], ["Wrecking Crew", 0]],
+            [
+                [
+                    "Hyper White Dajan",
+                    "Protectors",
+                    "Empire of the Apes",
+                    7,
+                    8,
+                    "8+6",
+                    "-",
+                    "8+5",
+                    5,
+                    [
+                        ["Beat Back", 1],
+                        ["Demolisher", 0],
+                        ["Fling", 1],
+                        ["High Mobility", 0],
+                        ["Treacherous Territory", 0],
+                    ],
+                ]
+            ],
+        ],
+        [
             "Defender X",
             "Protectors",
             "G.U.A.R.D.",
@@ -709,6 +741,38 @@ DATA = {
                         ["Slingshot", 0],
                         ["Waterlogged", 0],
                         ["Windup", 0],
+                    ],
+                ]
+            ],
+        ],
+        [
+            "Ulgoth",
+            "Destroyers",
+            "Lords of Cthul",
+            6,
+            7,
+            "7+4",
+            "-",
+            "7+4",
+            12,
+            [["Disruption", 0], ["Gravid", 0], ["Manufacture", 1], ["Unwieldy", 0]],
+            [
+                [
+                    "Hyper Ulgoth",
+                    "Destroyers",
+                    "Lords of Cthul",
+                    6,
+                    8,
+                    "8+5",
+                    "-",
+                    "7+5",
+                    7,
+                    [
+                        ["Chain Reaction", 1],
+                        ["Disruption", 0],
+                        ["Energy Drain", 3],
+                        ["Manufacture", 1],
+                        ["Treacherous Territory", 0],
                     ],
                 ]
             ],
@@ -1463,7 +1527,7 @@ DATA = {
         ],
         [
             "Action: Flak Field [2]",
-            "During your Monster Activation, this model can spend one Action Die to perform a Flak Field action. Return all units with DEF 2 or less to their unit reserves.",
+            "During your Monster Activation, this model can spend one Action Die to perform a Flak Field action. Return all units adjacent to this model with DEF 2 or less to their unit reserves.",
         ],
         [
             "Action: Nesting",
@@ -1634,6 +1698,10 @@ DATA = {
             "If you roll two or more Action Dice on an attack made by this model and the attack hits an enemy model, after the attack is resolved you can move one Action Die from your Unit Pool to your Monster Pool.",
         ],
         [
+            "Energy Drain",
+            "If this attack hits an enemy monster, your opponent must move one Action Die from their Monster Pool to their Unit Pool",
+        ],
+        [
             "Entropic Presence",
             "While this model is in play, enemy monsters cannot restore health.",
         ],
@@ -1674,6 +1742,10 @@ DATA = {
         [
             "Grappler",
             "Enemy models cannot move through this model or models adjacent to it. Enemy models are not immune to hazards adjacent to this model.",
+        ],
+        [
+            "Gravid",
+            "If this monster is hit by an attack, after the attack is resolved, you can choose one Faction model from your unit reserves and place it in play in an unoccupied space adjacent to this model.",
         ],
         [
             "Guerrilla Tactics",
@@ -1897,6 +1969,10 @@ DATA = {
             "When you Power Up, if you are securing this building, your opponent loses one Power Die.",
         ],
         [
+            "Treacherous Territory",
+            "Enemy units treat spaces within two spaces of this model as rough terrain while advancing.",
+        ],
+        [
             "Tunneler",
             "Other allied models that begin an advance within two spaces of this model gain High Mobility during that advance.",
         ],
@@ -1917,6 +1993,10 @@ DATA = {
             "If this unit is hit by an attack, return all enemy units adjacent to it to their unit reserves, then this unit is destroyed.",
         ],
         [
+            "Unwieldy",
+            "Enemy monsters do not roll Boost Dice when making throw power attacks against this model.",
+        ],
+        [
             "Vampirism",
             "If this attack hits an enemy monster, restore 1 Health to this monster after this attack has been resolved.",
         ],
@@ -1933,6 +2013,10 @@ DATA = {
         [
             "Wing Leader",
             "While this model is in play, allied Faction units with the Flight special rule gain +1 Boost Die when participating in blast attacks.",
+        ],
+        [
+            "Wrecking Crew",
+            "While this model is in play, allied Faction units gain Demolisher.",
         ],
     ],
     "agendas": ["Destroyers", "Protectors"],
