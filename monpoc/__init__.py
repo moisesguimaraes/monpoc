@@ -27,6 +27,8 @@ _FACTIONS = {
     9: ["Empire of the Apes", "APES"],
     10: ["UberCorp International", "UBERCORP"],
     11: ["Green Fury", "GREEN_FURY"],
+    12: ["Elemental Champions", "ELEMENTAL_CHAMPIONS"],
+    13: ["Savage Swarm", "SAVAGE_SWARM"],
 }
 
 Faction = Enum(
